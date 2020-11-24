@@ -1,0 +1,7 @@
+# Write your code
+a=100
+b=100
+c=100
+print (a/10)
+print (b*50)
+print (c+60)
