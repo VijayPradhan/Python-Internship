@@ -1,0 +1,3 @@
+# Write your code
+name="Vijay"
+print(name.replace('a','G'))
