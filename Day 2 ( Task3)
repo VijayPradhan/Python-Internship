@@ -1,0 +1,5 @@
+# Write your code
+a=50
+b=25.50
+a,b=b,a
+print (a,b)
