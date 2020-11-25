@@ -1,0 +1,14 @@
+dict={"RCB":"virat","CSK":"dhoni","MI":"Rohit","RR":"smith","SRH":"Warner"}
+print(dict)
+if 'RR'in dict:
+    del dict['RR']
+print (dict)
+
+
+
+
+
+
+
+
+
