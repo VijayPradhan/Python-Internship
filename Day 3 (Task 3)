@@ -1,0 +1,4 @@
+keys=["virat","Rohit","dhawan","Rahul","dhoni"]
+values=[101,87,63,93,54]
+team_dict =dict(zip(keys, values))
+print(team_dict)
