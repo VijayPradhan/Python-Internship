@@ -1,0 +1,17 @@
+#1 create a function getting two integers from the user
+x,y=6,4
+def arithmetic(x,y):
+    a=x+y  # addition of two numbers
+    print("Addition of two numbers is:",a)
+    b=x-y  #subtracting of two numbers
+    print("Subtracting of two numbers is:",b)
+    c=x/y   #division of two numbers
+    print("Division of two numbers is:",c)
+    d=x*y   #multiplication of two numbers
+    print("multiplication of two numbers is:",d)
+arithmetic(x,y)
+#2 create a function covid() & it should accept patient name & body temprature
+patient_name=input("enter patient name:")
+def covid(patient_name,body_temprature=98): #default body temprature
+    print("patient name is",patient_name &"body temprature is",body_temprature)
+covid("patient_name")
