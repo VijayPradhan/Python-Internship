@@ -1,0 +1,9 @@
+List=[10,20,30,40,50,60]
+List.append(70) #add an item into list
+print(List)
+List.remove(20) #remove an item into list
+print (List)
+a=max(List) #largest number
+print (a)
+b=min(List) #smallest number
+print (b)
