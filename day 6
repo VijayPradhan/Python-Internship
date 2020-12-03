@@ -1,0 +1,89 @@
+#DAY 6 TASK 1
+n=int(input("Enter number of elements:"))
+my_list=[]
+print("Enter the elements:")
+for i in range(n):
+    my_list.append(int(input()))
+print("My list:",my_list)
+for i in range(len(my_list)):
+    my_list[i]+=2
+print("My list after adding +2 to every elements:",my_list)
+
+
+#DAY 6 TASK 2
+n=5
+for i in range(n,0,-1):         # iterating i from n to 1
+    for j in range(i,0,-1):     # iterating j from i to 1
+        print(j,end="")         # printing j on same line
+    print()                     # print new line
+
+
+DAY 6 TASK 3
+x1=-1
+x2=1
+n=int(input("Enter the nth term:"))         # getting nth term from user
+for i in range(n):
+       t=x1+x2                              # calculating the term value t
+       print(t)                             # printing the value
+       x1=x2                                # changing x1 to x2
+       x2=t                                 # changing x2 to t
+       
+    
+DAY 6 TASK 4
+import math
+
+def is_armstrong_number(n,length):
+    t=n
+    temp=0
+    while t > 0:
+        last_digit = t % 10
+        temp = temp + math.pow(last_digit,length)
+        t = t// 10
+    if temp == n:
+        return True
+    return False
+
+num = int(input("Enter the number:"))
+num_length = math.floor(math.log10(num))+1
+if is_armstrong_number(num,num_length):
+    print(num,"is armstrong number")
+else:
+    print(num,"is not armstrong number")
+    
+    
+DAY 6 TASK 5
+
+n=int(input("Enter the last multiplayer:"))
+for i in range(1,n+1):
+    print("9 X", i, " = ",9*i)
+    
+    
+    
+DAY 6 TASK 6
+
+#n=int(input("Enter the last multiplayer:"))
+#for i in range(1,n+1):
+ #   print("9 X", i, " = ",9*i)
+
+n=int(input("Enter a number:"))
+if n < 0:
+     print(n,"is negative")
+elif n > 0:
+     print(n,"is positive")
+else:
+     print(n,"is neutral")
+     
+     
+     
+DAY 6 TASK 7
+days = int(input("Enter the number of days:"))
+age = days//365
+print("Age is",age,"year")
+    
+    
+    
+    
+    
+    
+    
+    
