@@ -1,0 +1,24 @@
+
+#1 create a python module with list and import the module in another .py file and change the value in list
+import import_ipynb
+import file
+a=file.list
+a=a+['7']
+print(a)
+
+#2 install pandas package
+import pandas
+temp = pandas.array([1,2,3])
+print(temp)
+
+#3 import that module that picks random number and write program to fetch a random number from 1 to 100 on every run
+import random
+for x in range(7):
+    print(random.randint(0,100))
+
+#4 import sys package and find the python path
+import sys
+print(sys.path)
+
+#5 try to install package and uninstall a package using pip
+print("Package has installed and uninstalled successfully using pip in command prompt")
