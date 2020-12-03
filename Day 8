@@ -1,0 +1,106 @@
+# list down all the errors types and check all the errors using a python program for all errors
+
+try:
+    print("Hello arts")
+except ZeroDivisionError:
+    print("Zero Division Error occurred")
+except NameError:
+    print("Name Error occurred")
+except TypeError:
+    print("Type Error occurred")
+except ValueError:
+    print("Value Error occurred")
+except IndexError:
+    print("Index Error occurred")
+except KeyError:
+    print("Key Error occurred")
+finally:
+    print("finally block executed")
+    
+    
+# Program make a simple calculator
+
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
+
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+    # Take input from the user
+    choice = input("Enter choice(1/2/3/4): ")
+
+    # Check if choice is one of the four options
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        break
+    else:
+        print("Invalid Input")
+        
+        
+        
+# print one massage if the try block raises a name error and another for other error
+
+try:
+    name = 'String'
+    print('nam')
+except NameError:
+    print("Name error occurred")
+except:
+    print("Other error occurred")
+finally:
+    print("Job Done")
+        
+        
+# Task 4 when try except scenario is not required
+""""
+when a try-catch scenario is not required ?
+try-catch block is not required when the developer assures that the particular statement is not will not raise any error:
+"""
+
+
+# Task 5 try getting and input inside the try catch block
+
+try:
+    a= int(input("Enter an integer number"))
+except ValueError:
+    print("inappropriate value")
+except:
+    print("Some Error occurred")
+else:
+    print(a)
+finally:
+    print("Job done")    
+    
+    
+    
