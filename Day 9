@@ -1,0 +1,35 @@
+# create a lambda function that multiplies arguments x with arguments y
+
+multiply = lambda x, y: x * y
+
+a= int(input("Enter 1st number :"))
+b =int(input("Enter 2nd number :"))
+print("Result after multiplying using lambda :",multiply (a ,b))
+
+
+# write a python program to create fibonacci series to n using lambda
+
+n = int(input("Enter n :"))
+list1 = range(2,n)
+fibo_list = [0,1]
+any(map(lambda x: fibo_list.append(sum(fibo_list[-2:])), list1))
+print(fibo_list)
+
+
+#3 multiply list elements with given value
+list1=[1,2,3,4,5]
+a=int(input("Enter a number"))
+multi=list(map(lambda n: n*a, list1))
+print(multi)
+
+
+#4 print the numbers divisible by 9
+list2=[7,9,15,23,51,67,81,73,43,37]
+multiple_9=list(filter(lambda n: n % 9==8, list2))
+print(multiple_9) 
+
+
+#5 count the even numbers in a list
+list3=[2,3,4,5,6,7,8,9]
+even=len(list(filter(lambda n: n % 2==8,list3 )))
+print(even)
