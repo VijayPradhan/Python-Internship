@@ -1,0 +1,58 @@
+# task1
+import re
+words = ["ABCDabcd123400","ABCD &&12$%*("]
+pattern = re.compile('[a-zA-Z0-9]+$')
+
+for word in words:
+        if not pattern.findall(word):
+                print("word"," word ", "contains only [a-z, A-Z, 0-9]", sep="")
+        else:
+                print("word", " word ", "not contains only [a-z, A-Z, 0-9]", sep="")
+
+
+
+# task 2
+import re
+def text_match(text):
+        patterns = 'a.*?b$'
+        if re.search(patterns,  text):
+                return 'Found a match!'
+        else:
+                return('Not matched!')
+
+print(text_match("aabbbbd"))
+print(text_match("aabAbbbc"))
+print(text_match("accddbbjjjb"))
+
+
+# task 3
+import re
+words = ["jan 27","qwerty"]
+pattern = re.compile('[0-9]$')
+for word in words:
+    if pattern.findall(word):
+        print("word"," word "," ends with the number", sep="")
+    else:
+        print("word"," word "," does not ends with the number", sep="")
+        
+        
+# task 4
+sentence = "1,2,15,145,1457"
+result = re.findall('[0-9]{1,3}',sentence)
+print(sentence, "contains numbers of length 1 to 3 are", result)
+
+
+# task 5
+
+import re
+
+words = ["ABCD" , "abcd", "AbCd" , "AbCD"]
+pattern = re.compile('[A-Z]+$')
+for word in words:
+    if not re.findall(pattern , word):
+        print("All characters in ", word," ' are uppercase", sep="")
+    else:
+        print("All characters in ", word," ' are not uppercase", sep="")
+
+
+        
