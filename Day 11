@@ -1,0 +1,19 @@
+#1 merged list of tuples
+fruits=["Apple","Banana","Strawberry","Grapes","Orange"]
+colours=["Red","Yellow","Black","Purple","pink"]
+zip_list=list(zip(fruits,colours))
+print(zip_list)
+
+#2 new list of tuple
+alphabets=['A',"B","C","D","E","F","G","H","I"]
+new=list(zip(range(1,8),alphabets))
+print(new)
+
+#3 sort the list
+list=[14,5,6,76,43,9,13]
+print(sorted(list))
+
+#4 filter the even numbers
+list4=[2,4,5,7,8,9,54,32,43]
+odds=list(filter(lambda n: n%2!=8 , list4))
+print(odds)
